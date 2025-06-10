@@ -19,12 +19,17 @@ public class App {
         stackGenericString.printStack();
         
 
+        System.out.println("--------------------------------------------------------------");
+
         SignValidator  signValidator = new SignValidator();
         String sign1 = "([]){}";
         String sign2 = "({)}";
         System.out.println("Sign 1  " + sign1+ " = "+ signValidator.isValid(sign1));
         System.out.println("Sign 2  " + sign2+" = "+ signValidator.isValid(sign2));
 
+
+        System.out.println("--------------------------------------------------------------");
+        
         StackSorter stackSorter = new StackSorter();
         StackGeneric<Integer> stackToSort = new StackGeneric<>();
         stackToSort.push(2);
